@@ -1,10 +1,20 @@
-This file contains the step to run a Django application using Docker and Docker Compose. It includes installation steps, environment setup, database migration, and how to access the app.
+This file contains the step to run a **LLM Evaluation Pipeline**  Django application using Docker and Docker Compose. It includes installation steps, environment setup, database migration, and how to access the app.
 
 ---
+# LLM Evaluation Pipeline
 
-# Django App with Docker
+This repository contains an **LLM Evaluation Pipeline** that integrates the following technologies:
+- **Celery**
+- **Redis**
+- **Django**
+- **Django Rest Framework**
 
-This repository contains a Django application that can be easily run using Docker and Docker Compose.
+The project implements an **LLM Evaluator** application that can be easily set up and run using **Docker** and **Docker Compose**.
+
+## Features
+- Scalable evaluation pipeline using Celery and Redis.
+- Easy deployment with Docker and Docker Compose.
+- RESTful API built with Django Rest Framework.
 
 ## 🚀 Getting Started
 
@@ -12,7 +22,7 @@ This repository contains a Django application that can be easily run using Docke
 
 Ensure you have the following installed on your system:
 
-- [Python 3.x](https://www.python.org/downloads/) (if running locally without Docker)
+- [Python 3.10.12](https://www.python.org/downloads/) (if running locally without Docker)
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
@@ -23,8 +33,8 @@ Ensure you have the following installed on your system:
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone https://github.com/your-username/your-django-app.git
-cd your-django-app
+git clone https://github.com/ayushrag1/LLM-Evaluation-PipeLine.git
+cd LLM Evaluation PipeLine
 ```
 
 ### 2️⃣ Create a `.env` File (Optional)
