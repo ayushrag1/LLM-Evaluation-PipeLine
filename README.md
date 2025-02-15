@@ -130,14 +130,24 @@ python manage.py runserver
   docker compose logs -f
   ```
 
-- Stop containers:
+- Stop Containers:
   ```sh
   docker compose down
   ```
 
-- Restart containers:
+- Restart Containers:
   ```sh
   docker compose restart
+  ```
+
+- View all Docker Volumes:
+  ```sh
+  docker volume ls
+  ```
+
+- Delete Docker Volume:
+  ```sh
+  docker volume rm <volume_name>
   ```
 
 ---
