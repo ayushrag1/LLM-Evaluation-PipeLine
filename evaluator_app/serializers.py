@@ -17,7 +17,7 @@ class EvaluationRequestSerializer(serializers.ModelSerializer):
 
         if self.context.get("request") and self.context["request"].method == "POST":
             # For create (POST) requests, only input_prompt and notification_email are required
-            return {key: fields[key] for key in ["input_prompt", "notification_email"]}
+            return {key: fields[key] for key in ["id", "input_prompt", "notification_email"]}
 
         # For other methods (GET, PUT, etc.), return all fields
         return fields
